@@ -7,7 +7,7 @@ public class User {
 	}
 
 	public void authentication(String login, String password) {
-		// TODO Auto-generated method stub
+		System.out.println("test");
      
 	}
 
