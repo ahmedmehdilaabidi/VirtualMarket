@@ -1,18 +1,46 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>miniprojet</groupId>
-  <artifactId>com.esprit.miniprojet.virtualMarket</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <dependencies>
-  	<dependency>
-  		<groupId>org.hibernate</groupId>
-  		<artifactId>hibernate-entitymanager</artifactId>
-  		<version>4.2.2.Final</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>mysql</groupId>
-  		<artifactId>mysql-connector-java</artifactId>
-  		<version>5.1.25</version>
-  	</dependency>
-  </dependencies>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>miniprojet</groupId>
+	<artifactId>com.esprit.miniprojet.virtualMarket</artifactId>
+	<version>1.0-SNAPSHOT</version>
+
+	<repositories>
+
+		<repository>
+			<id>swt repo</id>
+			<url>http://swt-maven.googlecode.com/git-history/master/</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>4.2.2.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.25</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.swt</groupId>
+			<artifactId>org.eclipse.swt.win32.win32.x86_64</artifactId>
+			<version>4.2.1</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.1</version>
+		</dependency>
+		<dependency>
+			<groupId>swt</groupId>
+			<artifactId>swt-linux-gtk-pi</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+	</dependencies>
 </project>
