@@ -2,6 +2,8 @@ package com.esprit.market.service;
 
 import java.util.HashSet;
 
+import com.esprit.market.domain.Room;
+
 public interface RoomDao {
 	
 	public void addRoom();
@@ -10,8 +12,8 @@ public interface RoomDao {
 
 	public void updateRoom();
 
-	public RoomDao getRoomById(int room);
+	public Room getRoomById(int room);
 
-	public HashSet<RoomDao> listRoom();
+	public HashSet<Room> listRoom();
 
 }

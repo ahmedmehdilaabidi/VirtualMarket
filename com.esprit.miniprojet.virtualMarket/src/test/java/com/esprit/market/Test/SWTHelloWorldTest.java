@@ -8,7 +8,7 @@ import org.eclipse.swt.widgets.Text;
 import com.esprit.market.forms.AuthenForm;
 import com.esprit.market.forms.MainMarketForm;
  
-public class SWTHelloWorld {
+public class SWTHelloWorldTest {
  
 public static void main (String [] args) {
 	
