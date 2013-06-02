@@ -4,12 +4,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="USER")
 public class User {
 	
 	
-	private String id;
+	private int id;
 	private String username;
 	private String password;
 
@@ -17,7 +19,15 @@ public class User {
 
 	}
 
-	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	
 	
@@ -29,15 +39,7 @@ public class User {
 		this.username = username;
 	}
 
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
+	
 
 
 
