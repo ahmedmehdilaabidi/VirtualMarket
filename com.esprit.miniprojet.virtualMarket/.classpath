@@ -43,5 +43,13 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="swing2swt.jar"/>
+	<classpathentry kind="lib" path="/home/ahmed/Bureau/eclipse/plugins/org.eclipse.core.databinding_1.4.1.v20120912-132807.jar" sourcepath="/home/ahmed/Bureau/eclipse/plugins/org.eclipse.core.databinding_1.4.1.v20120912-132807.jar"/>
+	<classpathentry kind="lib" path="/home/ahmed/Bureau/eclipse/plugins/org.eclipse.core.databinding.beans_1.2.200.v20120523-1955.jar" sourcepath="/home/ahmed/Bureau/eclipse/plugins/org.eclipse.core.databinding.beans_1.2.200.v20120523-1955.jar"/>
+	<classpathentry kind="lib" path="/home/ahmed/Bureau/eclipse/plugins/org.eclipse.core.databinding.observable_1.4.1.v20120521-2329.jar" sourcepath="/home/ahmed/Bureau/eclipse/plugins/org.eclipse.core.databinding.observable_1.4.1.v20120521-2329.jar"/>
+	<classpathentry kind="lib" path="/home/ahmed/Bureau/eclipse/plugins/org.eclipse.core.databinding.property_1.4.100.v20120523-1955.jar" sourcepath="/home/ahmed/Bureau/eclipse/plugins/org.eclipse.core.databinding.property_1.4.100.v20120523-1955.jar"/>
+	<classpathentry kind="lib" path="/home/ahmed/Bureau/eclipse/plugins/org.eclipse.jface.databinding_1.6.0.v20120912-132807.jar" sourcepath="/home/ahmed/Bureau/eclipse/plugins/org.eclipse.jface.databinding_1.6.0.v20120912-132807.jar"/>
+	<classpathentry kind="lib" path="/home/ahmed/Bureau/eclipse/plugins/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar" sourcepath="/home/ahmed/Bureau/eclipse/plugins/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar"/>
+	<classpathentry kind="lib" path="/home/ahmed/Bureau/eclipse/plugins/com.ibm.icu_4.4.2.v20110823.jar" sourcepath="/home/ahmed/Bureau/eclipse/plugins/com.ibm.icu_4.4.2.v20110823.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
