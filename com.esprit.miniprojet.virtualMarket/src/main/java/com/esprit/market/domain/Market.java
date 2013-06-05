@@ -52,7 +52,10 @@ public class Market {
 		this.descriptionMarket = descriptionMarket;
 	}
 	
-	
+	public void test()
+	{
+		
+	}
 	
 
 }
