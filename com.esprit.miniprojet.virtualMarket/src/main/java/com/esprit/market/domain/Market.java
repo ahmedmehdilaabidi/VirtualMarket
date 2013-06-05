@@ -1,5 +1,7 @@
 package com.esprit.market.domain;
 
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,6 +16,7 @@ public class Market {
 	private String nameMarket;
 	private String LocationMarket;
 	private String descriptionMarket;
+	private String test;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -48,5 +51,12 @@ public class Market {
 	public void setDescriptionMarket(String descriptionMarket) {
 		this.descriptionMarket = descriptionMarket;
 	}
+	
+	@Embeddable
+	public String getTest()
+	{
+		return "jj";
+	}
+	
 
 }

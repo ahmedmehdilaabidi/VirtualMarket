@@ -42,6 +42,7 @@
 			<attribute name="javadoc_location" value="jar:platform:/resource/com.esprit.miniprojet.virtualMarket/lib/jgoodies-common-javadoc.zip!/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="lib/jgoodies-common-javadoc.zip"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="swing2swt.jar"/>
 	<classpathentry kind="lib" path="/home/ahmed/Bureau/eclipse/plugins/org.eclipse.core.databinding_1.4.1.v20120912-132807.jar" sourcepath="/home/ahmed/Bureau/eclipse/plugins/org.eclipse.core.databinding_1.4.1.v20120912-132807.jar"/>
