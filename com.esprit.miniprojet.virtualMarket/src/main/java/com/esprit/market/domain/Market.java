@@ -16,7 +16,7 @@ public class Market {
 	private String nameMarket;
 	private String LocationMarket;
 	private String descriptionMarket;
-	private String test;
+	private String Raghda;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -51,11 +51,15 @@ public class Market {
 	public void setDescriptionMarket(String descriptionMarket) {
 		this.descriptionMarket = descriptionMarket;
 	}
-	
-	public void test()
-	{
-		System.out.println("test");
+
+	public String getRaghda() {
+		return Raghda;
 	}
+
+	public void setRaghda(String raghda) {
+		Raghda = raghda;
+	}
+	
 	
 
 }
