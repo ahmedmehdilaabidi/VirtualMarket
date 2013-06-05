@@ -52,11 +52,7 @@ public class Market {
 		this.descriptionMarket = descriptionMarket;
 	}
 	
-	@Embeddable
-	public String getTest()
-	{
-		return "jj";
-	}
+	
 	
 
 }
