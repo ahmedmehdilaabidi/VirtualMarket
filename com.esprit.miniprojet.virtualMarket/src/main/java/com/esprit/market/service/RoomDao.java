@@ -6,7 +6,7 @@ import com.esprit.market.domain.Room;
 
 public interface RoomDao {
 	
-	public void addRoom();
+	public void addRoom(Room r);
 
 	public void deleteRoom();
 

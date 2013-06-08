@@ -10,6 +10,7 @@
 		<class>com.esprit.market.domain.Market</class>
 		<class>com.esprit.market.domain.Product</class>
 		<class>com.esprit.market.domain.Stock</class>
+	
 		
 		<properties>
 			<property name="hibernate.connection.url" value="jdbc:mysql://127.0.0.1:3306/market" />

@@ -33,5 +33,15 @@
 			<artifactId>x86</artifactId>
 			<version>3.3.0-v3346</version>
 		</dependency>
+		<dependency>
+			<groupId>swt</groupId>
+			<artifactId>jface</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.ui</groupId>
+			<artifactId>forms</artifactId>
+			<version>3.3.0-v20070511</version>
+		</dependency>
 	</dependencies>
 </project>
