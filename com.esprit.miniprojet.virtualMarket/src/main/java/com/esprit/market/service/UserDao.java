@@ -15,5 +15,7 @@ public interface UserDao {
 	public User getRoomById(int user);
 
 	public HashSet<User> listUser();
+	
+	public void checkUser(String login,String password);
 
 }
