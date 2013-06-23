@@ -8,7 +8,10 @@ import javax.persistence.Query;
 import org.junit.Test;
 
 import com.esprit.market.domain.User;
-import com.esprit.market.utils.JPAUTIL;
+
+import com.esprit.market.utils.*;
+
+
 
 public class JpqlTest {
 

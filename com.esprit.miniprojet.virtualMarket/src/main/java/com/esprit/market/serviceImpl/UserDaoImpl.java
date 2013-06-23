@@ -1,11 +1,9 @@
 package com.esprit.market.serviceImpl;
 
 import java.util.HashSet;
-import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
-import javax.persistence.Parameter;
 import javax.persistence.Query;
 
 import com.esprit.market.domain.User;
@@ -41,12 +39,7 @@ public class UserDaoImpl implements UserDao {
 		tx.commit();
 	}
 
-	public User getRoomById(int id) {
 
-		return entityManager.find(User.class, id);
-	}
-
-	
 	@SuppressWarnings("unchecked")
 	public HashSet<User> listUser() {
 		// requete jpql
@@ -80,6 +73,12 @@ public void checkUser(String login, String password) {
 	  
 	  
 	
+}
+   @SuppressWarnings("unchecked")
+
+public User getUserById(int id) {
+	// TODO Auto-generated method stub
+	return entityManager.find(User.class, id);
 }
 	
 

@@ -10,6 +10,7 @@
 		<class>com.esprit.market.domain.Market</class>
 		<class>com.esprit.market.domain.Product</class>
 		<class>com.esprit.market.domain.Stock</class>
+		<class>com.esprit.market.domain.Personne</class>
 	
 		
 		<properties>
@@ -28,4 +29,7 @@
 
 
 	</persistence-unit>
+	
+	
+	
 </persistence>
