@@ -1,19 +1,19 @@
 package com.esprit.market.service;
 
-import java.util.HashSet;
+import java.util.List;
 
 import com.esprit.market.domain.Market;
 
 public interface MarketDao {
 
-	public void addMarket();
+	public void addMarket(Market market);
 
-	public void deleteMarket();
+	public void deleteMarket(Market market);
 
-	public void updateMarket();
+	public void updateMarket(Market market);
 
-	public Market listMarketById();
+	public Market listMarketById(int id);
 
-	public HashSet<Market> listMarket();
+	public List<Market> listMarket();
 
 }

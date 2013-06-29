@@ -1,19 +1,20 @@
 package com.esprit.market.service;
 
 import java.util.HashSet;
+import java.util.List;
 
 import com.esprit.market.domain.Product;
 
 public interface ProductDao {
 
-	public void addProduct();
+	public void addProduct(Product p);
 
-	public void deleteProduct();
+	public void deleteProduct(Product p);
 
-	public void updateproduct();
+	public void updateproduct(Product p);
 
-	public Product getProductById();
+	public Product getProductById(int id);
 
-	public HashSet<Product> listProduct();
+	public List<Product> listProduct();
 
 }

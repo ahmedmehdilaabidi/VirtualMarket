@@ -1,9 +1,12 @@
 package com.esprit.market.domain;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 
@@ -15,6 +18,7 @@ public class Room {
 	private int idRoom;
 	private String nameRoom;
 	private String desctiptionRoom;
+	private List<Market> market;
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	public int getIdRoom() {
@@ -35,6 +39,14 @@ public class Room {
 	}
 	public void setDesctiptionRoom(String desctiptionRoom) {
 		this.desctiptionRoom = desctiptionRoom;
+	}
+	
+	@OneToMany
+	public List<Market> getMarket() {
+		return market;
+	}
+	public void setMarket(List<Market> market) {
+		this.market = market;
 	}
 	
 	

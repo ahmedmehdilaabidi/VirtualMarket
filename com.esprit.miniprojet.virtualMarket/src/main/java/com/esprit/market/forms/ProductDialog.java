@@ -1,4 +1,4 @@
-package com.esprit.market.forms.Provider;
+package com.esprit.market.forms;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
@@ -7,10 +7,8 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
-public class RoomForm extends JDialog {
+public class ProductDialog extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
 
@@ -19,7 +17,7 @@ public class RoomForm extends JDialog {
 	 */
 	public static void main(String[] args) {
 		try {
-			RoomForm dialog = new RoomForm();
+			ProductDialog dialog = new ProductDialog();
 			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 			dialog.setVisible(true);
 		} catch (Exception e) {
@@ -30,7 +28,7 @@ public class RoomForm extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public RoomForm() {
+	public ProductDialog() {
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setLayout(new FlowLayout());
@@ -42,12 +40,6 @@ public class RoomForm extends JDialog {
 			getContentPane().add(buttonPane, BorderLayout.SOUTH);
 			{
 				JButton okButton = new JButton("OK");
-				okButton.addActionListener(new ActionListener() {
-					public void actionPerformed(ActionEvent arg0) {
-				System.out.println("hello !!");		
-				
-					}
-				});
 				okButton.setActionCommand("OK");
 				buttonPane.add(okButton);
 				getRootPane().setDefaultButton(okButton);

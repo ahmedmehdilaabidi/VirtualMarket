@@ -1,14 +1,19 @@
 package com.esprit.market.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
+import com.esprit.market.domain.Market;
 import com.esprit.market.domain.User;
 
+import com.esprit.market.service.MarketDao;
+import com.esprit.market.serviceImpl.MarketDaoImpl;
 import com.esprit.market.utils.*;
 
 
@@ -18,7 +23,7 @@ public class JpqlTest {
 	
 	EntityManager entityManager = JPAUTIL
 			.getEntityManager("com.esprit.miniprojet.virtualMarket");
-	@Test
+	@Ignore @Test
 	public void test() {
 		Query query = entityManager.createQuery("select p.username,p.password from User p ");
 				
@@ -38,6 +43,25 @@ public class JpqlTest {
 	      }
 	    }
 		entityManager.close();
+		
+	}
+	
+	
+	@Test
+	public  void testMarket()
+	{
+		MarketDao market=new MarketDaoImpl();
+		
+		
+		System.out.println(market.listMarket());
+		
+		for(Object m:market.listMarket())
+		{
+			
+			System.out.println("id:"+((Market) m).getIdMarket());
+			
+		}
+		
 		
 	}
 
